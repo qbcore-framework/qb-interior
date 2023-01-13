@@ -169,5 +169,6 @@ end)
 
 exports('CreateWarehouse1', function(spawn)
     local exit = {x = -8.95, y = 0.51, z = 1.04, h = 268.82}
-    return CreateShell(spawn, exit, `shell_warehouse1`)
+    local model = "shell_warehouse1"
+    return CreateShell(spawn, exit, model)
 end)
