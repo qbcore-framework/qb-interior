@@ -57,7 +57,7 @@ end)
 
 exports('CreateApartmentFurnished', function(spawn)
 
-    local exit = json.decode('{"x": 1.5, "y": -10.0, "z": 0, "h":358.50}')
+    local exit = json.decode('{"x": -1.50, "y": 10.0, "z": 1.3, "h":358.50}')
     
     local model = "furnitured_midapart"
     local obj = CreateShell(spawn, exit, model)
@@ -72,6 +72,7 @@ exports('CreateApartmentFurnished', function(spawn)
             IsNew = false
         end)
     end
+    TeleportToInterior(spawn.x + 1.5, spawn.y - 8.0, spawn.z + 1.0, 0.0)
     return { obj[1], obj[2] }
 end)
 
