@@ -1528,3 +1528,182 @@ exports('CreateK4House4', function(spawn)
 	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
     return { objects, POIOffsets }
 end)
+
+-- Furnished Offices
+
+exports('CreateFurnishedOffice1', function(spawn)
+	local objects = {}
+    local POIOffsets = {}
+	POIOffsets.exit = json.decode('{"x": 3.33, "y": -2.05, "z": 1.39, "h": 92.20}')
+	DoScreenFadeOut(500)
+    while not IsScreenFadedOut() do Wait(10) end
+	RequestModel(`k4mb1_furnishedoffice1_shell`)
+	while not HasModelLoaded(`k4mb1_furnishedoffice1_shell`) do Wait(1000) end
+	local house = CreateObject(`k4mb1_furnishedoffice1_shell`, spawn.x, spawn.y, spawn.z, false, false, false)
+    FreezeEntityPosition(house, true)
+    objects[#objects+1] = house
+	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
+    return { objects, POIOffsets }
+end)
+
+exports('CreateFurnishedOffice2', function(spawn)
+	local objects = {}
+    local POIOffsets = {}
+	POIOffsets.exit = json.decode('{"x": 4.42, "y": 3.54, "z": 1.36, "h": 179.63}')
+	DoScreenFadeOut(500)
+    while not IsScreenFadedOut() do Wait(10) end
+	RequestModel(`k4mb1_furnishedoffice2_shell`)
+	while not HasModelLoaded(`k4mb1_furnishedoffice2_shell`) do Wait(1000) end
+	local house = CreateObject(`k4mb1_furnishedoffice2_shell`, spawn.x, spawn.y, spawn.z, false, false, false)
+    FreezeEntityPosition(house, true)
+    objects[#objects+1] = house
+	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
+    return { objects, POIOffsets }
+end)
+
+exports('CreateFurnishedOffice3', function(spawn)
+	local objects = {}
+    local POIOffsets = {}
+	POIOffsets.exit = json.decode('{"x": -0.66, "y": 5.81, "z": 1.51, "h": 90.57}')
+	DoScreenFadeOut(500)
+    while not IsScreenFadedOut() do Wait(10) end
+	RequestModel(`k4mb1_furnishedoffice3_shell`)
+	while not HasModelLoaded(`k4mb1_furnishedoffice3_shell`) do Wait(1000) end
+	local house = CreateObject(`k4mb1_furnishedoffice3_shell`, spawn.x, spawn.y, spawn.z, false, false, false)
+    FreezeEntityPosition(house, true)
+    objects[#objects+1] = house
+	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
+    return { objects, POIOffsets }
+end)
+
+exports('CreateFurnishedOffice4', function(spawn)
+	local objects = {}
+    local POIOffsets = {}
+	POIOffsets.exit = json.decode('{"x": 8.60, "y": -2.28, "z": 1.56, "h": 91.17}')
+	DoScreenFadeOut(500)
+    while not IsScreenFadedOut() do Wait(10) end
+	RequestModel(`k4mb1_furnishedoffice4_shell`)
+	while not HasModelLoaded(`k4mb1_furnishedoffice4_shell`) do Wait(1000) end
+	local house = CreateObject(`k4mb1_furnishedoffice4_shell`, spawn.x, spawn.y, spawn.z, false, false, false)
+    FreezeEntityPosition(house, true)
+    objects[#objects+1] = house
+	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
+    return { objects, POIOffsets }
+end)
+
+exports('CreateFurnishedOffice5', function(spawn)
+	local objects = {}
+    local POIOffsets = {}
+	POIOffsets.exit = json.decode('{"x": 3.19, "y": -13.87, "z": 1.26, "h": 2.37}')
+	DoScreenFadeOut(500)
+    while not IsScreenFadedOut() do Wait(10) end
+	RequestModel(`k4mb1_furnishedoffice5_shell`)
+	while not HasModelLoaded(`k4mb1_furnishedoffice5_shell`) do Wait(1000) end
+	local house = CreateObject(`k4mb1_furnishedoffice5_shell`, spawn.x, spawn.y, spawn.z, false, false, false)
+    FreezeEntityPosition(house, true)
+    objects[#objects+1] = house
+	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
+    return { objects, POIOffsets }
+end)
+
+-- Hood House
+
+exports('CreateHoodHouse', function(spawn)
+	local objects = {}
+    local POIOffsets = {}
+	POIOffsets.exit = json.decode('{"x": -2.49, "y": -7.38, "z": 2.01, "h": 93.19}')
+	DoScreenFadeOut(500)
+    while not IsScreenFadedOut() do Wait(10) end
+	RequestModel(`k4mb1_hoodhouse1_shell`)
+	while not HasModelLoaded(`k4mb1_hoodhouse1_shell`) do Wait(1000) end
+	local house = CreateObject(`k4mb1_hoodhouse1_shell`, spawn.x, spawn.y, spawn.z, false, false, false)
+    FreezeEntityPosition(house, true)
+    objects[#objects+1] = house
+	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
+    return { objects, POIOffsets }
+end)
+
+-- Laundry Shell
+
+exports('CreateLaundry', function(spawn)
+	local objects = {}
+    local POIOffsets = {}
+	POIOffsets.exit = json.decode('{"x": 10.45, "y": -5.70, "z": 3.37, "h": 5.13}')
+	DoScreenFadeOut(500)
+    while not IsScreenFadedOut() do Wait(10) end
+	RequestModel(`k4mb1_laundry_shell`)
+	while not HasModelLoaded(`k4mb1_laundry_shell`) do Wait(1000) end
+	local house = CreateObject(`k4mb1_laundry_shell`, spawn.x, spawn.y, spawn.z, false, false, false)
+    FreezeEntityPosition(house, true)
+    objects[#objects+1] = house
+	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
+    return { objects, POIOffsets }
+end)
+
+-- Paleto House
+
+exports('CreatePaletoHouse', function(spawn)
+	local objects = {}
+    local POIOffsets = {}
+	POIOffsets.exit = json.decode('{"x": -0.92, "y": 5.65, "z": 3.34, "h": 90.05}')
+	DoScreenFadeOut(500)
+    while not IsScreenFadedOut() do Wait(10) end
+	RequestModel(`k4mb1_palhouse1_shell`)
+	while not HasModelLoaded(`k4mb1_palhouse1_shell`) do Wait(1000) end
+	local house = CreateObject(`k4mb1_palhouse1_shell`, spawn.x, spawn.y, spawn.z, false, false, false)
+    FreezeEntityPosition(house, true)
+    objects[#objects+1] = house
+	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
+    return { objects, POIOffsets }
+end)
+
+-- Sandy House
+
+exports('CreateSandyHouse', function(spawn)
+	local objects = {}
+    local POIOffsets = {}
+	POIOffsets.exit = json.decode('{"x": 1.65, "y": -4.60, "z": 3.19, "h": 2.53}')
+	DoScreenFadeOut(500)
+    while not IsScreenFadedOut() do Wait(10) end
+	RequestModel(`k4mb1_sandyhouse1_shell`)
+	while not HasModelLoaded(`k4mb1_sandyhouse1_shell`) do Wait(1000) end
+	local house = CreateObject(`k4mb1_sandyhouse1_shell`, spawn.x, spawn.y, spawn.z, false, false, false)
+    FreezeEntityPosition(house, true)
+    objects[#objects+1] = house
+	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
+    return { objects, POIOffsets }
+end)
+
+-- Empty House
+
+exports('CreateEmptyHouse', function(spawn)
+	local objects = {}
+    local POIOffsets = {}
+	POIOffsets.exit = json.decode('{"x": -0.42, "y": -2.35, "z": 1.91, "h": 271.88}')
+	DoScreenFadeOut(500)
+    while not IsScreenFadedOut() do Wait(10) end
+	RequestModel(`kambi_emptyhouse1`)
+	while not HasModelLoaded(`kambi_emptyhouse1`) do Wait(1000) end
+	local house = CreateObject(`kambi_emptyhouse1`, spawn.x, spawn.y, spawn.z, false, false, false)
+    FreezeEntityPosition(house, true)
+    objects[#objects+1] = house
+	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
+    return { objects, POIOffsets }
+end)
+
+-- Furnished House
+
+exports('CreateFurnishedHouse', function(spawn)
+	local objects = {}
+    local POIOffsets = {}
+	POIOffsets.exit = json.decode('{"x": -0.47, "y": -2.38, "z": 1.90, "h": 274.87}')
+	DoScreenFadeOut(500)
+    while not IsScreenFadedOut() do Wait(10) end
+	RequestModel(`kambi_furnishedhouse1`)
+	while not HasModelLoaded(`kambi_furnishedhouse1`) do Wait(1000) end
+	local house = CreateObject(`kambi_furnishedhouse1`, spawn.x, spawn.y, spawn.z, false, false, false)
+    FreezeEntityPosition(house, true)
+    objects[#objects+1] = house
+	TeleportToInterior(spawn.x + POIOffsets.exit.x, spawn.y + POIOffsets.exit.y, spawn.z + POIOffsets.exit.z, POIOffsets.exit.h)
+    return { objects, POIOffsets }
+end)
