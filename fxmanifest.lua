@@ -1,9 +1,9 @@
 fx_version 'cerulean'
 game 'gta5'
 lua54 'yes'
-description 'QB-Interior'
+author 'Kakarot'
+description 'Collection of shell models with exports for creating them'
 version '1.2.0'
-
 this_is_a_map 'yes'
 
 client_scripts {
